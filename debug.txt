@@ -1,6 +1,1 @@
-File ~/Desktop/Fachlabor/Produktion_V6/venv/lib/python3.13/site-packages/ase/calculators/cp2k.py:536, in Cp2kShell.__init__(self, command, debug)
-    533 self._debug = debug
-    535 # launch cp2k_shell child process
---> 536 assert 'cp2k_shell' in command
-    537 if self._debug:
-    538     print(command
+ase gui LJ_Argon_MD.traj
