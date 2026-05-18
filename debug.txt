@@ -1,13 +1,6 @@
-# TODO: create the CP2K calculator and assign it to two_argon_atoms.calc
-
-
-# Remember to include a cutoff parameter (try e.g. 400 Ry)
-two_argon_atoms.calc = CP2K(inp=inp,
-                            basis_set="DZVP-MOLOPT-SR-GTH",
-                            pseudo_potential="GTH-PBE-q8",
-                            potential_file="GTH_POTENTIALS",
-                            xc="PBE",
-                            cutoff=400 * units.Rydberg,
-                            command="cp2k.psmp -s",
-                            )
-
+File ~/Desktop/Fachlabor/Produktion_V6/venv/lib/python3.13/site-packages/ase/calculators/cp2k.py:536, in Cp2kShell.__init__(self, command, debug)
+    533 self._debug = debug
+    535 # launch cp2k_shell child process
+--> 536 assert 'cp2k_shell' in command
+    537 if self._debug:
+    538     print(command
